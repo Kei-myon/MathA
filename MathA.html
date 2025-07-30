@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数学A公式まとめ</title>
+  <style>
+    span.formula {
+      color: red;
+    }
+    span.explanation {
+      color: blue;
+    }
+    span.example {
+      color: green;
+    }
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 5px;
+    }
+    p {
+      margin-left: 20px;
+      padding-bottom: 15px;
+    }
+  </style>
+  <h1>数学A</h1>
+  <h3>目次</h3>
+  <ul>
+    <li>
+      <a href="#1">集合Aの要素の個数</a>
+    </li>
+    <li>
+      <a href="#2">補集合の要素の個数</a>
+    </li>
+    <li>
+      <a href="#3">共通部分と和集合</a>
+    </li>
+    <li>
+      <a href="#4">和集合の要素の個数</a>
+    </li>
+    <li>
+      <a href="#5">和の法則</a>
+    </li>
+    <li>
+      <a href="#6">積の法則</a>
+    </li>
+    <li>
+      <a href="#7">順列</a>
+    </li>
+    <li>
+      <a href="#8">「隣り合う」という条件のついた順列</a>
+    </li>
+    <li>
+      <a href="#9">重複順列</a>
+    </li>
+    <li>
+      <a href="#10">円順列</a>
+    </li>
+    <li>
+      <a href="#11">組合せ</a>
+    </li>
+    <li>
+      <a href="#12">組合せの性質</a>
+    </li>
+    <li>
+      <a href="#13">試行と事象</a>
+    </li>
+    <li>
+      <a href="#14">確率の意味</a>
+    </li>
+    <li>
+      <a href="#15">確率の計算</a>
+    </li>
+    <li>
+      <a href="#16">排反事象の確率</a>
+    </li>
+    <li>
+      <a href="#17">余事象の確率</a>
+    </li>
+    <li>
+      <a href="#18">独立な試行の確率</a>
+    </li>
+  </ul>
+</head>
+<body>
+  <h2 id="1">・集合Aの要素の個数</h2>
+  <p>
+    <span class="formula">n(A)</span>で表す。
+  </p>
+  <h2 id="2">・補集合の要素の個数</h2>
+  <p>
+    <span class="formula">n(&Amacr;) &equals; n(U) &minus; n(A)</span>
+  </p>
+  <h2 id="3">・共通部分と和集合</h2>
+  <p>
+    ・<span class="formula">A &cap; B</span> &rarr; <span class="explanation">AとBのどちらにも含まれる<br>要素全体の集合</span>
+  </p>
+  <p>
+    ・<span class="formula">A &cup; B</span> &rarr; <span class="explanation">A, Bの要素をすべて集めた集合</span>
+  </p>
+  <h2 id="4">・和集合の要素の個数</h2>
+  <p>
+    <span class="formula">n(A &cup; B) &equals; n(A) &plus; n(B) &minus; n(A &cap; B)</span>
+  </p>
+  <h2 id="5">・和の法則</h2>
+  <p>
+    Aの起こり方がm通り,Bの起こり方がn通りあるとき,<span class="explanation">AまたはBの起こる場合の数は</span>
+    <br><span class="formula">m &plus; n</span> (通り)
+    <br>これを<span class="explanation">和の法則</span>という。
+  </p>
+  <h2 id="6">・積の法則</h2>
+  <p>
+    Aの起こり方がm通り,Bの起こり方がn通りあるとき,<span class="explanation">A,Bがともに起こる場合の数は</span>
+    <br><span class="formula">m &times; n</span> (通り)
+    <br>これを<span class="explanation">積の法則</span>という。
+  </p>
+  <h2 id="7">・順列</h2>
+  <p>
+    いくつかのものを<span class="explanation">順序を考えに入れて</span>並べたものを
+    <br><span class="explanation">順列</span>という。
+    <br>(<span class="explanation">[1,2,3]と[2,1,3]は異なる並べ方として考える</span>)
+    <br>n個のものからr個とった順列の総数を<span class="formula"> <sub>n</sub>P<sub>r</sub> </span>で表す。
+  </p>
+  <p>
+    <span class="example">例:&nbsp;<sub>4</sub>P<sub>3</sub> </span>&equals;&nbsp;4&times;3&times;2&times;1&equals;24&emsp;24通り
+  </p>
+  <h2 id="8">・「隣り合う」という条件のついた順列</h2>
+  <p>
+    「隣り合う」「連続する」ときは<span class="explanation">ひとかたまりで考える。</span>
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;A,B,C,Dの男子4人,ア,イの女子2人が一列に並ぶ時,女子2人が隣り合う並び方は何通りあるか。
+    <br><span class="example">A,B,C,D,アイ&nbsp;の並び方</span>&rarr;5!
+    <br><span class="example">ア,イの並び方</span>&rarr;2!
+    <br><span class="example">積の法則により</span>
+    <br>5! &times; 2! &equals; 240&emsp;240通り
+  </p>
+  <h2 id="9">・重複順列</h2>
+  <p>
+    <span class="explanation">同じものをくり返し用いてもよい場合の順列</span>を<span class="explanation">重複順列</span>という。
+    <br>n個のものから重複を許してr個とって並べる並べ方の総数は
+    <br><span class="formula">n<sup>r</sup>&emsp;</span>(通り)
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;4個の数字1,2,3,4をくり返し用いてできる3桁の整数は何個あるか。
+    <br><span class="example">4<sup>3</sup> </span>&equals;&nbsp;64&emsp;64個
+  </p>
+  <h2 id="10">・円順列</h2>
+  <p>
+    ものを円形に並べるとき,<span class="explanation">回転して一致するものはすべて同じ並べ方とみなすとした順列</span>である。
+    <br>&rArr;ある1つのものから見た風景の種類を数えればよい。
+    <br>異なるn個のものの円順列の総数は
+    <br><span class="formula">(n &minus; 1)!&nbsp;</span>通り
+  </p>
+  <h2 id="11">・組合せ</h2>
+  <p>
+    いくつかのものを<span class="explanation">順列を考えに入れないで</span>1組にしたものを組合せという。
+    <br>異なるn個のものからr個取り出して1組としたものを,n個のものからr個とった<span class="explanation">組合せ</span>といい,その総数を<span class="formula"><sub>n</sub>C<sub>r</sub></span>で表す。
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;4個の果物,a,b,c,dの中から3個を選ぶとき,その選び方は何通りあるか。
+    <br>{a,b,c}{a,b,d}{a,c,d}{b,c,d}&emsp;<span class="example"><sub>4</sub>C<sub>3</sub></span>
+    <br>&rarr;&nbsp;4通り
+  </p>
+  <h2 id="12">・組合せの性質</h2>
+  <p>
+    ・<span class="formula"><sub>n</sub>C<sub>r</sub> &equals; <sub>n</sub>C<sub>n&minus;r</sub></span>
+    <br>・<span class="formula"><sub>n</sub>C<sub>n</sub> &equals; 1</span>
+    <br>・<span class="formula"><sub>n</sub>C<sub>0</sub> &equals; 1</span>
+  </p>
+  <h2 id="13">・試行と事象</h2>
+  <p>
+    ものごとの起こりやすさの度合いを数値で表すことを考える。
+    <br><span class="explanation">試行</span> &rarr; さいころを投げることのように,同じ条件のもとで,何回もくり返すことができる実験や観測
+    <br><span class="explanation">事象</span> &rarr; 試行の結果として起こることがら
+    <br><span class="explanation">全事象</span> &rarr; ある試行において起こりうる結果の全体
+    <br><span class="explanation">同様に確からしい</span> &rarr; 起こりうる結果がどれも同じ程度に起こると期待できること。
+  </p>
+  <h2 id="14">・確率の意味</h2>
+  <p>
+    ある試行で起こりうる<span class="explanation">全ての結果がN通り</span>で,その各々は同様に確からしいとする。
+    <br>そのうち<span class="explanation">事象Aが起こる場合の数がa通り</span>のとき
+    <br><span class="explanation">a/Nを事象Aが起こる確率</span>といい<span class="explanation">P(A)</span>で表す。
+    <br>事象Aが起こる確率は,
+    <br><span class="formula">P(A) &equals; 事象Aが起こる場合の数 / 起こりうるすべての場合の数</span>
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;ジョーカーを除く1組52枚のトランプから無作為に1枚のカードを引くとき,ダイヤのカードを引く確率を求めよ。
+    <br><span class="example">13/52</span> &equals; 1/4
+  </p>
+  <h2 id="15">・確率の計算</h2>
+  <p>
+    <span class="example">例:</span>&nbsp;大小2個のサイコロを同時に投げるとき,目の和が8になる確率を求めよ。
+    <br>目の出方の総数は&emsp;6 &times; 6 &equals; 36
+    <br>目の和が8となるのは 5通り
+    <br><span class="example">5/36</span>
+  </p>
+  <p>
+    <span class="explanation">確率の問題では,見た目の区別がつかないものもすべて区別して考える</span>
+  </p>
+  <p>
+    <span class="example">例2:</span>&nbsp;赤球4個と白球3個の合計7個の球が入っている袋から,同時に2個の球を取り出すとき,2個とも赤球である確率を求めよ。
+    <br><span class="example"><sub>4</sub>C<sub>2</sub>/<sub>7</sub>C<sub>2</sub></span> &equals; 2/7
+  </p>
+  <h2 id="16">・排反事象の確率</h2>
+  <p>
+    2つの事象A,Bについて<span class="explanation">AまたはBが起こること</span>をAとBの<span class="explanation">和事象</span>といい,<span class="formula">A &cup; B </span>で表す。
+    <br>2つの事象<span class="explanation">AとBが同時に起こらないとき</span>,AとBは<span class="explanation">排反事象</span>であるという。
+    <br>AとBが排反事象であるとき,
+    <br><span class="formula">P(A &cup; B) &equals; P(A) &plus; P(B)</span>
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;赤球4個と白球3個の合計7個の球が入っている袋から,同時に2個の球を取り出すとき,2個とも同じ色である確率を求めよ。
+    <br><sub>7</sub>C<sub>2</sub> &equals; 21 &rarr; 取り出し方の総数
+    <br><sub>4</sub>C<sub>2</sub>/21 &equals;2/7 &rarr; 2個とも赤球が出る事象
+    <br><sub>3</sub>C<sub>2</sub>/21 &equals; 1/7 &rarr; 2個とも白球が出る事象
+    <br><span class="example">2/7 &plus; 1/7</span> &equals; 3/7
+  </p>
+  <h2 id="17">・余事象の確率</h2>
+  <p>
+    <span class="explanation">事象Aに対してAが起こらない事象</span>をAの<span class="explanation">余事象</span>といい,<span class="formula"> &#x0100;</span> で表す。
+    <br>事象Aに対し
+    <br><span class="formula">P(&#x0100;) &equals; 1 &minus; P(A)</span>
+    <br>&rarr; (Aが起こらない確率) &equals; 1 &minus; (Aが起こる確率)
+    <br><span class="formula">P(A) &equals; 1 &minus; P(&#x0100;)</span>
+    <br>&rarr; (Aが起こる確率) &equals; 1 &minus; (Aが起こらない確率)
+    <br><span class="explanation">「少なくとも&hellip;」という事象の確率を求めるときは,
+    <br>余事象を考えると計算しやすい場合が多い。</span>
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;10本のくじの中に当たりくじが3本ある。このくじを同時に2本引くとき,少なくとも1本は当たる確率を求めよ。
+    <br>当たり,はずれに着目して,場合を分ける
+    <br>(ア) 2本とも当たる
+    <br>(イ) 1本は当たり,もう1本ははずれる
+    <br>(ウ) 2本ともはずれる
+    <br>(ア)と(イ)がA,(ウ)が&#x0100;
+    <br><span class="example">P(&#x0100;) &equals; <sub>7</sub>C<sub>2</sub>/<sub>10</sub>C<sub>2</sub> &equals;7/15
+    <br>1 &minus; 7/15</span> &equals; 8/15
+  </p>
+  <h2 id="18">・独立な試行の確率</h2>
+  <p>
+    <span class="explanation">2つの試行についてそれぞれの結果が互いに他方に影響を与えない</span>とき,この2つの試行は<span class="explanation">独立</span>であるという。
+    <br>2つの試行が独立であるとき,一方で事象Aが起こり,もう一方で事象Bが起こる確率は,
+    <br><span class="formula">P(A) &times; P(B)</span>
+  </p>
+  <p>
+    <span class="example">例:</span>&nbsp;10本のくじの中に当たりくじが3本ある。このくじをA,Bの2人が順に1本ずつ引く。
+    <br>Aが引いて,引いたくじをもとにもどしてからBが引くとき
+    <br>2人とも当たりを引く確率を求めよ。
+    <br><span class="example">3/10 &times; 3/10</span> &equals; 9/100
+  </p>
+</body>
+</html>
